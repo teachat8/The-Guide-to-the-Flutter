@@ -26,6 +26,7 @@ class SnackBarWidget extends StatelessWidget {
       child: Text('Show SnackBar'),
       onPressed: () {
         Scaffold.of(context).showSnackBar(SnackBar(
+            // SnackBar 显示的主要内容 SnackBar 显示的时间默认是4.0s
             content: Text('SnackBar'), duration: Duration(seconds: 5)));
       },
     );

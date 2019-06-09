@@ -15,7 +15,9 @@ class ShowModalBottomSheetWidget extends StatelessWidget {
               return RaisedButton(
                 onPressed: () {
                   showModalBottomSheet(
+                      // 应用上下文	
                       context: context,
+                      // 要显示的 BottomSheet	
                       builder: (context) => BottomSheet(
                           onClosing: () {},
                           builder: (context) => Container(

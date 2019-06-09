@@ -16,10 +16,14 @@ class ShowAboutDialogWidget extends StatelessWidget {
               builder: (context) => RaisedButton(
                   onPressed: () {
                     showAboutDialog(
+                        // 应用上下文	
                         context: context,
+                        // 应用的名字
                         applicationName: 'Flutter UI Widget -- 对话框',
+                        // 应用的版本
                         applicationVersion: '1.0.0');
                   },
+                  // 添加在后面的 Widget
                   child: Text('RaisedButton')))),
     );
   }

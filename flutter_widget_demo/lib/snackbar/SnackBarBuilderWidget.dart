@@ -14,6 +14,7 @@ class SnackBarBuilderWidget extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: Text("Flutter UI Widget -- SnackBar 及 Builder")),
         body: Builder(
+          // 创建 子Widget
           builder: (context) => RaisedButton(
                 child: Text('Show SnackBar'),
                 onPressed: () {

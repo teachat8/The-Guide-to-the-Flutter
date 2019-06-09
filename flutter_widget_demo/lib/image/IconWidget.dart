@@ -14,7 +14,9 @@ class IconWidget extends StatelessWidget {
         appBar: AppBar(title: Text("Flutter UI基础Widget -- 图片和Icon")),
         body: Icon(
           Icons.android,
+          // icon的大小
           size: 50.0,
+          // 	icon的颜色
           color: Colors.green,
         ),
       ),

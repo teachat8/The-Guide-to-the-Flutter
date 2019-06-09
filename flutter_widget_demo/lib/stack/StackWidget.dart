@@ -14,9 +14,12 @@ class StackWidget extends StatelessWidget {
         appBar: AppBar(title: Text("Flutter布局Widget -- 层叠布局")),
         body: Stack(
           fit: StackFit.expand,
+          // Stack布局 里排列的内容	
           children: <Widget>[
             Positioned(
+              // 离 Stack 左边的距离
               left: 50,
+              // 离 Stack 上边的距离
               top: 100,
               child: Image.asset(
                 "images/flutter.png",

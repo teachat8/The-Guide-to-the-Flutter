@@ -19,14 +19,20 @@ class ShowSimpleDialogWidget extends StatelessWidget {
                             title: Text('SimpleDialog Demo'),
                             children: <Widget>[
                               SimpleDialogOption(
+                                // 显示的内容一般是 Text
                                 child: Text('OK'),
+                                // 点击事件，当手指松开时才触发
                                 onPressed: () {
+                                  // 关闭 SimpleDialog
                                   Navigator.of(context).pop();
                                 },
                               ),
                               SimpleDialogOption(
+                                // 显示的内容一般是 Text
                                 child: Text('CANCEL'),
+                                // 点击事件，当手指松开时才触发
                                 onPressed: () {
+                                  // 关闭 SimpleDialog
                                   Navigator.of(context).pop();
                                 },
                               )

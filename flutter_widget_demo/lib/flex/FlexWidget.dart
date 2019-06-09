@@ -10,7 +10,9 @@ class FlexWidget extends StatelessWidget {
         home: new Scaffold(
             appBar: new AppBar(title: new Text('Flutter 布局Widget -- 弹性布局')),
             body: Column(
+              // 表示 子Widget 在交叉轴的对齐方式
               crossAxisAlignment: CrossAxisAlignment.start,
+              // Flex布局 里排列的内容
               children: <Widget>[
                 Container(
                   width: 30.0,
@@ -18,7 +20,9 @@ class FlexWidget extends StatelessWidget {
                 ),
                 Container(
                   child: Flex(
+                    // 主轴方向为水平方向，那么 子Widget 就会沿水平方向排列，交叉轴就是垂直方向。
                     direction: Axis.horizontal,
+                    // 表示 子Widget 在主轴的对齐方式	
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
                       Flexible(
@@ -36,7 +40,9 @@ class FlexWidget extends StatelessWidget {
                 ),
                 Container(
                   child: Flex(
+                    // 主轴的方向	
                     direction: Axis.horizontal,
+                    // 表示 子Widget 在主轴的对齐方式	
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
                       Expanded(
@@ -55,7 +61,9 @@ class FlexWidget extends StatelessWidget {
                 Text('三个 Flexible 的 flex：1:2:1'),
                 Container(
                   child: Flex(
+                    // 主轴方向为水平方向，那么 子Widget 就会沿水平方向排列，交叉轴就是垂直方向。
                     direction: Axis.horizontal,
+                    // // 表示 子Widget 在主轴的对齐方式	
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
                       Flexible(
@@ -92,6 +100,7 @@ class FlexWidget extends StatelessWidget {
                 Text('三个 Expanded 的 flex：1:2:1'),
                 Container(
                   child: Flex(
+                    // 主轴方向为水平方向，那么 子Widget 就会沿水平方向排列，交叉轴就是垂直方向。
                     direction: Axis.horizontal,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
@@ -129,7 +138,9 @@ class FlexWidget extends StatelessWidget {
                 Text('三个 Expanded 的 flex：1:1:1'),
                 Container(
                   child: Flex(
+                    // 主轴方向为水平方向，那么 子Widget 就会沿水平方向排列，交叉轴就是垂直方向。
                     direction: Axis.horizontal,
+                    // // 表示 子Widget 在主轴的对齐方式	
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
                       Expanded(

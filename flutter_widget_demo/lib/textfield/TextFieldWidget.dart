@@ -17,10 +17,13 @@ class TextFieldWidget extends StatelessWidget {
           body: Column(
             children: <Widget>[
               TextField(
+                // 输入框中允许的最大字符数	
                 maxLength: 10,
+                // 用于控制TextField的外观显示，如提示文本、背景颜色、边框等
                 decoration: InputDecoration(
                   counterText: ''
                 ),
+                // 控制 TextField 的编辑，如果没有设置，会有默认值
                 controller: _controller,
               ),
               RaisedButton(

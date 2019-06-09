@@ -11,8 +11,12 @@ class SingleChildScrollViewWidget extends StatelessWidget {
             appBar: new AppBar(
                 title: new Text('Flutter 可滚动Widget -- SingleChildScrollView')),
             body: SingleChildScrollView(
+              // 滑动的方向
+              // 默认为 Axis.vertical，垂直方向可滑动
               scrollDirection: Axis.horizontal,
+              // 添加滚动功能的 Widget
               child: Row(
+                // SingleChildScrollView 的列表项	
                 children: <Widget>[Text('Hello Flutter ' * 100)],
               ),
             )));

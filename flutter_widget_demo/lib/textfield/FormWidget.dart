@@ -26,6 +26,9 @@ class FormWidgetState extends State<FormWidget> {
       ),
       home: Scaffold(
           appBar: AppBar(title: Text("Flutter UI基础Widget -- Form")),
+          // 创建 Form，并为其添加 GlobalKey
+          // 在 Form 里添加表单元素，并给表单元素添加校验逻辑。 这里添加的表单元素，
+          // 我使用到了 DropdownButtonFormField 和 TextFormField：
           body: Form(
             key: _formKey,
             child: Column(
@@ -49,6 +52,7 @@ class FormWidgetState extends State<FormWidget> {
                 ),
                 TextFormField(
                   decoration: InputDecoration(hintText: '用户名'),
+                  // 表单元素的验证逻辑是 validator 函数
                   validator: (value) { //
                     if (value?.length <= 5) {
                       return '用户名必须大于 5 个字符';
@@ -60,7 +64,9 @@ class FormWidgetState extends State<FormWidget> {
                 ),
                 TextFormField(
                   decoration: InputDecoration(hintText: '密码'),
+                  // obscureText 设为 Ture，会隐藏当前输入的文字，用 * 代替
                   obscureText: true,
+                  // 表单元素的验证逻辑是 validator 函数
                   validator: (value) {
                     if (value?.length <= 8) {
                       return '密码必须大于 8 个字符';

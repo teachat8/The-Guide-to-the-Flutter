@@ -11,7 +11,9 @@ class ContainerWidget extends StatelessWidget {
             appBar:
                 new AppBar(title: new Text('Flutter 容器Widget -- Container')),
             body: Container(
+              // 容器外边距	
               margin: EdgeInsets.only(top: 50.0, left: 120.0), //容器外补白
+              // 容器的大小限制	
               constraints:
                   BoxConstraints.tightFor(width: 200.0, height: 150.0), //卡片大小
               decoration: BoxDecoration(
@@ -30,6 +32,7 @@ class ContainerWidget extends StatelessWidget {
                   ]),
               transform: Matrix4.rotationZ(.2), //卡片倾斜变换
               alignment: Alignment.center, //卡片内文字居中
+              // 容器里显示的 Widget	
               child: Text(
                 //卡片文字
                 "Hello Flutter",
